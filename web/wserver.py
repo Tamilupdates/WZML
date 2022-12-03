@@ -227,12 +227,12 @@ function s_validate() {
           src="https://graph.org/file/1a6ad157f55bc42b548df.png"
           alt="logo"
         />
-        <a href="https://t.me/Nanthakps">
+        <a href="https://telegram.me/Nanthakps">
           <h2 class="name">Qbittorrent Selection</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://t.me/Nanthakps"><i class="fab fa-telegram"></i></a>
+        <a href="https://telegram.me/Nanthakps"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <div id="sticks">
@@ -618,12 +618,12 @@ section span{
           src="https://telegra.ph/file/d97b51f6c90761102e0b6.jpg"
           alt="logo"
         />
-        <a href="https://t.me/Nanthakps">
+        <a href="https://telegram.me/Nanthakps">
           <h2 class="name">Qbittorrent Selection</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://t.me/Nanthakps"><i class="fab fa-telegram"></i></a>
+        <a href="https://telegram.me/Nanthakps"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>

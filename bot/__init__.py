@@ -442,7 +442,7 @@ try:
         raise KeyError
 except:
     START_BTN1_NAME = 'Master'
-    START_BTN1_URL = 'https://t.me/Nanthakps'
+    START_BTN1_URL = 'https://telegram.me/Nanthakps'
 
 try:
     START_BTN2_NAME = getConfig('START_BTN2_NAME')
@@ -451,7 +451,7 @@ try:
         raise KeyError
 except:
     START_BTN2_NAME = 'Support Channel'
-    START_BTN2_URL = 'https://t.me/KPSTorrent'
+    START_BTN2_URL = 'https://telegram.me/KPSTorrent'
 try:
     BUTTON_FOUR_NAME = getConfig('BUTTON_FOUR_NAME')
     BUTTON_FOUR_URL = getConfig('BUTTON_FOUR_URL')
@@ -668,9 +668,9 @@ except KeyError:
 try:
     AUTHOR_URL = getConfig('AUTHOR_URL')
     if len(AUTHOR_URL) == 0:
-        AUTHOR_URL = 'https://t.me/Nanthakps'
+        AUTHOR_URL = 'https://telegram.me/Nanthakps'
 except KeyError:
-    AUTHOR_URL = 'https://t.me/Nanthakps'
+    AUTHOR_URL = 'https://telegram.me/Nanthakps'
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:

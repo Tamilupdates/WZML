@@ -67,7 +67,7 @@ def _clone(message, bot):
                     uname = f'<a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>'
                 buttons = ButtonMaker()
                 chat_u = CHANNEL_USERNAME.replace("@", "")
-                buttons.buildbutton("⚡ CHANNEL LINK ⚡", f"https://t.me/{chat_u}")
+                buttons.buildbutton("⚡ CHANNEL LINK ⚡", f"https://telegram.me/{chat_u}")
                 help_msg = f"Dᴇᴀʀ {uname},\nYᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴍʏ Cʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ Bᴏᴛ \n\nCʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ Bᴜᴛᴛᴏɴ ᴛᴏ ᴊᴏɪɴ ᴍʏ Cʜᴀɴɴᴇʟ."
                 reply_message = sendMarkup(help_msg, bot, message, buttons.build_menu(2))
                 Thread(target=auto_delete_message, args=(bot, message, reply_message)).start()
@@ -85,7 +85,7 @@ def _clone(message, bot):
             bot_d = bot.get_me()
             b_uname = bot_d.username
             uname = f'<a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>'
-            botstart = f"http://t.me/{b_uname}"
+            botstart = f"http://telegram.me/{b_uname}"
             buttons.buildbutton("Click Here to Start Me", f"{botstart}")
             startwarn = f"Dear {uname},\n\n<b>I found that you haven't started me in PM (Private Chat) yet.</b>\n\n" \
                         f"From now on i will give link and leeched files in PM and log channel only"
@@ -199,7 +199,7 @@ def _clone(message, bot):
                     botpm = f"\n<b>Hey {tag}!, I have sent your cloned links in PM.</b>\n"
                     buttons = ButtonMaker()
                     b_uname = bot.get_me().username
-                    botstart = f"http://t.me/{b_uname}"
+                    botstart = f"http://telegram.me/{b_uname}"
                     buttons.buildbutton("View links in PM", f"{botstart}")
                     if PICS:
                         sendPhoto(msg + botpm, bot, message, random.choice(PICS), buttons.build_menu(2))
@@ -243,7 +243,7 @@ def _clone(message, bot):
                             botpm = f"\n<b>Hey {tag}!, I have sent your cloned links in PM.</b>\n"
                             buttons = ButtonMaker()
                             b_uname = bot.get_me().username
-                            botstart = f"http://t.me/{b_uname}"
+                            botstart = f"http://telegram.me/{b_uname}"
                             buttons.buildbutton("View links in PM", f"{botstart}")
                             if PICS:
                                 sendPhoto(msg + botpm, bot, message, random.choice(PICS), buttons.build_menu(2))

@@ -267,7 +267,7 @@ def _getResult(search_results, key, message, method):
                         if 'torrent' in subres.keys():
                             msg += f"<a href='{subres['torrent']}'>Direct Link</a><br>"
                         elif 'magnet' in subres.keys():
-                            msg += f"<b>Share Magnet to</b> <a href='http://t.me/share/url?url={subres['magnet']}'>Telegram</a><br>"
+                            msg += f"<b>Share Magnet to</b> <a href='http://telegram.me/share/url?url={subres['magnet']}'>Telegram</a><br>"
                     msg += '<br>'
                 else:
                     msg += f"<b>Size: </b>{result['size']}<br>"
@@ -278,14 +278,14 @@ def _getResult(search_results, key, message, method):
                     if 'torrent' in result.keys():
                         msg += f"<a href='{result['torrent']}'>Direct Link</a><br><br>"
                     elif 'magnet' in result.keys():
-                        msg += f"<b>Share Magnet to</b> <a href='http://t.me/share/url?url={quote(result['magnet'])}'>Telegram</a><br><br>"
+                        msg += f"<b>Share Magnet to</b> <a href='http://telegram.me/share/url?url={quote(result['magnet'])}'>Telegram</a><br><br>"
             else:
                 msg += f"<a href='{result.descrLink}'>{escape(result.fileName)}</a><br>"
                 msg += f"<b>Size: </b>{get_readable_file_size(result.fileSize)}<br>"
                 msg += f"<b>Seeders: </b>{result.nbSeeders} | <b>Leechers: </b>{result.nbLeechers}<br>"
                 link = result.fileUrl
                 if link.startswith('magnet:'):
-                    msg += f"<b>Share Magnet to</b> <a href='http://t.me/share/url?url={quote(link)}'>Telegram</a><br><br>"
+                    msg += f"<b>Share Magnet to</b> <a href='http://telegram.me/share/url?url={quote(link)}'>Telegram</a><br><br>"
                 else:
                     msg += f"<a href='{link}'>Direct Link</a><br><br>"
 
@@ -334,7 +334,7 @@ def _getResult(search_results, key, message, method):
                             msg += f"href='{subres['torrent']}'>Direct Link</a></span>"
                         elif 'magnet' in subres.keys():
                             msg += "<span><b>Share Magnet to</b> <a class='withhover' "
-                            msg += f"href='http://t.me/share/url?url={subres['magnet']}'>Telegram</a></span>"
+                            msg += f"href='http://telegram.me/share/url?url={subres['magnet']}'>Telegram</a></span>"
                     msg += '<br>'
                 else:
                     msg += f"<span class='topmarginsm'><b>Size: </b>{result['size']}</span>"
@@ -348,7 +348,7 @@ def _getResult(search_results, key, message, method):
                         msg += f"href='{result['torrent']}'>Direct Link</a></span>"
                     elif 'magnet' in result.keys():
                         msg += "<span class='topmarginxl'><b>Share Magnet to</b> <a class='withhover' "
-                        msg += f"href='http://t.me/share/url?url={quote(result['magnet'])}'>Telegram</a></span>"
+                        msg += f"href='http://telegram.me/share/url?url={quote(result['magnet'])}'>Telegram</a></span>"
             else:
                 msg += f"<div> <a class='withhover' href='{result.descrLink}'>{escape(result.fileName)}</a></div>"
                 msg += f"<span class='topmarginsm'><b>Size: </b>{get_readable_file_size(result.fileSize)}</span>"
@@ -357,7 +357,7 @@ def _getResult(search_results, key, message, method):
                 link = result.fileUrl
                 if link.startswith('magnet:'):
                     msg += "<span class='topmarginxl'><b>Share Magnet to</b> <a class='withhover' "
-                    msg += f"href='http://t.me/share/url?url={quote(link)}'>Telegram</a></span>"
+                    msg += f"href='http://telegram.me/share/url?url={quote(link)}'>Telegram</a></span>"
                 else:
                     msg += f"<span class='topmarginxl'><a class='withhover' href='{link}'>Direct Link</a></span>"
             msg += '</span>'

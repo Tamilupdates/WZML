@@ -35,7 +35,7 @@ def _ytdl(bot, message, isZip=False, isLeech=False):
                     uname = f'<a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>'
                 buttons = ButtonMaker()
                 chat_u = CHANNEL_USERNAME.replace("@", "")
-                buttons.buildbutton("⚡ CHANNEL LINK ⚡", f"https://t.me/{chat_u}")
+                buttons.buildbutton("⚡ CHANNEL LINK ⚡", f"https://telegram.me/{chat_u}")
                 help_msg = f"Dᴇᴀʀ {uname},\nYᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴍʏ Cʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ Bᴏᴛ \n\nCʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ Bᴜᴛᴛᴏɴ ᴛᴏ ᴊᴏɪɴ ᴍʏ Cʜᴀɴɴᴇʟ."
                 reply_message = sendMarkup(help_msg, bot, message, buttons.build_menu(2))
                 Thread(target=auto_delete_message, args=(bot, message, reply_message)).start()
@@ -52,7 +52,7 @@ def _ytdl(bot, message, isZip=False, isLeech=False):
             bot_d = bot.get_me()
             b_uname = bot_d.username
             uname = f'<a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>'
-            botstart = f"http://t.me/{b_uname}"
+            botstart = f"http://telegram.me/{b_uname}"
             buttons.buildbutton("Click Here to Start Me", f"{botstart}")
             startwarn = f"Dear {uname},\n\n<b>I found that you haven't started me in PM (Private Chat) yet.</b>\n\n" \
                         f"From now on i will give link and leeched files in PM and log channel only"
@@ -140,7 +140,7 @@ def _ytdl(bot, message, isZip=False, isLeech=False):
         help_msg += "\n\n<b>NOTE:</b> Add `^` before integer, some values must be integer and some string."
         help_msg += " Like playlist_items:10 works with string, so no need to add `^` before the number"
         help_msg += " but playlistend works only with integer so you must add `^` before the number like example above."
-        help_msg += "\n\nCheck all arguments from the <a href='http://t.me/nanthakps'>Admin</a>."
+        help_msg += "\n\nCheck all arguments from the <a href='http://telegram.me/nanthakps'>Admin</a>."
         reply_message = sendMessage(help_msg, bot, message)
         Thread(target=auto_delete_message, args=(bot, message, reply_message)).start()
         return reply_message

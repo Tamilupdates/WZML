@@ -184,7 +184,7 @@ def get_readable_message():
                     msg += f"\n<b>├⚡ Speed:</b> {download.speed()}"
                     msg += f"\n<b>├⏳ ETA:</b> {download.eta()}"
                     msg += f"<b> | Elapsed: </b>{get_readable_time(time() - download.message.date.timestamp())}"
-                    msg += f'\n<b>├🧑‍💻 Master :</b> <a href="https://t.me/{AUTHOR_NAME}">{AUTHOR_NAME} 🔥</a>'
+                    msg += f'\n<b>├🧑‍💻 Master :</b> <a href="https://telegram.me/Nanthakps">Nanthakps 🔥</a>'
                     msg += f"\n<b>├⛓️ Engine :</b> {download.eng()}"
 
                 else:
@@ -193,7 +193,7 @@ def get_readable_message():
                     msg += f"\n<b>├ Speed:</b> {download.speed()}"
                     msg += f"\n<b>├ ETA:</b> {download.eta()}"
                     msg += f"<b> | Elapsed: </b>{get_readable_time(time() - download.message.date.timestamp())}"
-                    msg += f'\n<b>├ Master :</b> <a href="https://t.me/{AUTHOR_NAME}">{AUTHOR_NAME}</a>'
+                    msg += f'\n<b>├ Master :</b> <a href="https://telegram.me/Nanthakps">Nanthakps</a>'
                     msg += f"\n<b>├ Engine :</b> {download.eng()}"
 
                 if hasattr(download, 'seeders_num'):
@@ -210,10 +210,10 @@ def get_readable_message():
                     try:
                         chatid = str(download.message.chat.id)[4:]
                         if EMOJI_THEME is True:
-                            msg += f'\n<b>├🌐 Source: </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
+                            msg += f'\n<b>├🌐 Source: </b><a href="https://telegram.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
                             msg += f"\n<b>╰❌ </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                         else:
-                            msg += f'\n<b>├ Source: </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
+                            msg += f'\n<b>├ Source: </b><a href="https://telegram.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
                             msg += f"\n<b>╰ </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"                 
                     except:
                         pass
@@ -228,7 +228,7 @@ def get_readable_message():
             elif download.status() == MirrorStatus.STATUS_SEEDING:
                 if EMOJI_THEME is True:
                     msg += f"\n<b>├📦 Size: </b>{download.size()}"
-                    msg += f'\n<b>├🧑‍💻 Master :</b> <a href="https://t.me/{AUTHOR_NAME}">{AUTHOR_NAME} 🔥</a>'
+                    msg += f'\n<b>├🧑‍💻 Master :</b> <a href="https://telegram.me/Nanthakps">Nanthakps 🔥</a>'
                     msg += f"\n<b>├⛓️ Engine:</b> <code>qBittorrent v4.4.2</code>"
                     msg += f"\n<b>├⚡ Speed: </b>{download.upload_speed()}"
                     msg += f"\n<b>├🔺 Uploaded: </b>{download.uploaded_bytes()}"
@@ -238,7 +238,7 @@ def get_readable_message():
                     msg += f"\n<b>╰❌ </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                 else:
                     msg += f"\n<b>├ Size: </b>{download.size()}"
-                    msg += f'\n<b>├ Master :</b> <a href="https://t.me/{AUTHOR_NAME}">{AUTHOR_NAME}</a>'
+                    msg += f'\n<b>├ Master :</b> <a href="https://telegram.me/Nanthakps">Nanthakps</a>'
                     msg += f"\n<b>├ Engine:</b> <code>qBittorrent v4.4.2</code>"
                     msg += f"\n<b>├ Speed: </b>{download.upload_speed()}"
                     msg += f"\n<b>├ Uploaded: </b>{download.uploaded_bytes()}"
@@ -248,7 +248,7 @@ def get_readable_message():
                     msg += f"\n<b>╰ </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
             else:
                 if EMOJI_THEME is True:
-                    msg += f'\n<b>├🧑‍💻 Master :</b> <a href="https://t.me/{AUTHOR_NAME}">{AUTHOR_NAME} 🔥</a>'
+                    msg += f'\n<b>├🧑‍💻 Master :</b> <a href="https://telegram.me/Nanthakps">Nanthakps 🔥</a>'
                     msg += f"\n<b>├⛓️ Engine :</b> {download.eng()}"
                     msg += f"\n<b>╰📐 Size: </b>{download.size()}"
                 else:
