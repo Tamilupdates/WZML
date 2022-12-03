@@ -463,9 +463,9 @@ def bot_sys_stats():
        if stats.status() == MirrorStatus.STATUS_SPLITTING:
                 num_split += 1
     stats = f"""
-🖥️ CPU: [ {p_core} / {t_core} Cores ] {cpuUsage}%
-🎮 RAM: [ {mem_a} / {mem_t} ] {mem_p}%
-💾 Disk: [ {free} / {total} ] {disk}%
+🖥️ CPU: [ {t_core} Cores ] {cpuUsage}%
+🎮 RAM: [ {mem_t} ] {mem_p}%
+💾 Disk: [ {total} ] {disk}%
 🔻 DL : {num_active}   | 🔺 UP : {num_upload}  | ♻️ TOTAL : {tasks}
 
 Made with ❤️ by {CREDIT_NAME} 🔥

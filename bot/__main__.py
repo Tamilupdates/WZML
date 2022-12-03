@@ -194,7 +194,7 @@ def log(update, context):
     sendLogFile(context.bot, update.message)
 
 
-help_string = f'<b><a href="https://t.me/{AUTHOR_NAME}">{AUTHOR_NAME}</a></b> - The Ultimate Telegram Mirror-Leech Bot to Upload Your File & Link in Google Drive & Telegram\
+help_string = f'<b><a href='https://telegram.me/Nanthakps'>Nanthakps</a></b> - The Ultimate Telegram Mirror-Leech Bot to Upload Your File & Link in Google Drive & Telegram\
 \n\n<b>Choose A Help Category:</b>'
 
 help_string_telegraph_user = f'''
@@ -356,6 +356,7 @@ if SET_BOT_COMMANDS:
         (f'{BotCommands.MediaInfoCommand}','Get Information of telegram Files'),
         (f'{BotCommands.PreNameCommand}','Set Prename for Leech Files'),
         (f'{BotCommands.CaptionCommand}','Set Caption for Leech Files'),
+        (f'{BotCommands.ScrapeCommand}','Scrape Links from Website'),
         (f'{BotCommands.StatusCommand}','Get mirror status message'),
         (f'{BotCommands.StatsCommand}','Show the Stats of machine the bot'),
         (f'{BotCommands.ListCommand}','Search in Drive'),
