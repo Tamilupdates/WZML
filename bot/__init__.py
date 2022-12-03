@@ -458,8 +458,8 @@ try:
     if len(BUTTON_FOUR_NAME) == 0 or len(BUTTON_FOUR_URL) == 0:
         raise KeyError
 except:
-    BUTTON_FOUR_NAME = '⚡ Buy Private Bot ⚡'
-    BUTTON_FOUR_URL = 'https://t.me/Nanthakps'
+    BUTTON_FOUR_NAME = None
+    BUTTON_FOUR_URL = None
 try:
     BUTTON_FIVE_NAME = getConfig('BUTTON_FIVE_NAME')
     BUTTON_FIVE_URL = getConfig('BUTTON_FIVE_URL')
