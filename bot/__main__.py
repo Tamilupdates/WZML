@@ -84,10 +84,10 @@ def stats(update, context):
                     f'<b>├ 🛠 Updated On: </b>{last_commit}\n'\
                     f'<b>├ ⌛ Uptime: </b>{currentTime}\n'\
                     f'<b>├ 🟢 OS Uptime: </b>{osUptime}\n'\
-                    f'<b>├ 🖥️ CPU:</b> [ {p_core} / {t_core} Cores ] {cpuUsage}%\n'\
-                    f'<b>├ 🎮 RAM:</b> [ {mem_a} / {mem_t} ] {mem_p}%\n'\
-                    f'<b>├ ✳ SWAP:</b> [ {swap_u} / {swap_t} ] {swap_p}%\n'\
-                    f'<b>├ 💾 Disk:</b> [ {free} / {total} ] {disk}%\n'\
+                    f'<b>├ 🖥️ CPU:</b> [ {t_core} Cores ] {cpuUsage}%\n'\
+                    f'<b>├ 🎮 RAM:</b> [ {mem_t} ] {mem_p}%\n'\
+                    f'<b>├ ✳ SWAP:</b> [ {swap_t} ] {swap_p}%\n'\
+                    f'<b>├ 💾 Disk:</b> [ {total} ] {disk}%\n'\
                     f'<b>├ 🔺 Upload Data:</b> {sent}\n'\
                     f'<b>╰ 🔻 Download Data:</b> {recv}\n\n'
 
@@ -96,10 +96,10 @@ def stats(update, context):
                     f'<b>├  Updated On: </b>{last_commit}\n'\
                     f'<b>├  Uptime: </b>{currentTime}\n'\
                     f'<b>├  OS Uptime: </b>{osUptime}\n'\
-                    f'<b>├  CPU:</b> [ {p_core} / {t_core} Cores ] {cpuUsage}%\n'\
-                    f'<b>├  RAM:</b> [ {mem_a} / {mem_t} ] {mem_p}%\n'\
-                    f'<b>├  SWAP:</b> [ {swap_u} / {swap_t} ] {swap_p}%\n'\
-                    f'<b>├  Disk:</b> [ {free} / {total} ] {disk}%\n'\
+                    f'<b>├  CPU:</b> [ {t_core} Cores ] {cpuUsage}%\n'\
+                    f'<b>├  RAM:</b> [ {mem_t} ] {mem_p}%\n'\
+                    f'<b>├  SWAP:</b> [ {swap_t} ] {swap_p}%\n'\
+                    f'<b>├  Disk:</b> [ {total} ] {disk}%\n'\
                     f'<b>├  Disk Free:</b> {free}\n'\
                     f'<b>├  Upload Data:</b> {sent}\n'\
                     f'<b>╰  Download Data:</b> {recv}\n\n'
