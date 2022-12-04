@@ -466,7 +466,7 @@ def bot_sys_stats():
 🖥️ CPU: [ {t_core} Cores ] {cpuUsage}%
 🎮 RAM: [ {mem_t} ] {mem_p}%
 💾 Disk: [ {total} ] {disk}%
-🔻 DL : {num_active}   | 🔺 UP : {num_upload}  | ♻️ TOTAL : {tasks}
+🔺 UP : {num_upload}  | 🔻 DL : {num_active}  | ♻️ TOTAL : {tasks}
 
 Made with ❤️ by {CREDIT_NAME} 🔥
 """
