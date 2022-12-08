@@ -366,8 +366,6 @@ if SET_BOT_COMMANDS:
         (f'{BotCommands.CancelMirror}','Cancel a task'),
         (f'{BotCommands.SearchCommand}','Search in Torrent'),
         (f'{BotCommands.PingCommand}','Ping the bot'),
-        (f'{BotCommands.RestartCommand}','Restart the bot'),
-        (f'{BotCommands.LogCommand}','Get the bot Log'),
         (f'{BotCommands.HelpCommand}','Get detailed help')
     ]
 
@@ -430,13 +428,13 @@ def main():
                     with open(".restartmsg") as f:
                         chat_id, msg_id = map(int, f)
                     msg = f"😎Restarted successfully❗\n\n"
-                    msg += f"🧑‍💻Master: @{AUTHOR_NAME} 🔥\n"
+                    msg += f"🧑‍💻Master: @Nanthakps 🔥\n"
                     msg += f"📅DATE: {date}\n"
                     msg += f"⌚TIME: {time}\n"
                     msg += f"🌐TIMEZONE: {TIMEZONE}"
                 else:
                     msg = f"😎Bot Restarted!\n\n"
-                    msg += f"🧑‍💻Master: @{AUTHOR_NAME} 🔥\n"
+                    msg += f"🧑‍💻Master: @Nanthakps 🔥\n"
                     msg += f"📅DATE: {date}\n"
                     msg += f"⌚TIME: {time}\n"
                     msg += f"🌐TIMEZONE: {TIMEZONE}"
@@ -467,11 +465,11 @@ def main():
     if ospath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
-        msg = f"😎Restarted successfully❗\n\n🧑‍💻Master: @{AUTHOR_NAME} 🔥\n📅DATE: {date}\n⌚TIME: {time}\n🌐TIMEZONE: {TIMEZONE}"
+        msg = f"😎Restarted successfully❗\n\n🧑‍💻Master: @Nanthakps 🔥\n📅DATE: {date}\n⌚TIME: {time}\n🌐TIMEZONE: {TIMEZONE}"
         bot.edit_message_text(msg, chat_id, msg_id)
         osremove(".restartmsg")
     elif not notifier_dict and AUTHORIZED_CHATS:
-        text = f"😎Bot Restarted❗\n\n🧑‍💻Master: @{AUTHOR_NAME} 🔥\n📅DATE: {date} \n⌚TIME: {time} \n🌐TIMEZONE: {TIMEZONE}"
+        text = f"😎Bot Restarted❗\n\n🧑‍💻Master: @Nanthakps 🔥\n📅DATE: {date} \n⌚TIME: {time} \n🌐TIMEZONE: {TIMEZONE}"
         for id_ in AUTHORIZED_CHATS:
             try:
                 bot.sendMessage(chat_id=id_, text=text, parse_mode=ParseMode.HTML)
