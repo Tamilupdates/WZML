@@ -462,8 +462,6 @@ def bot_sys_stats():
 🎮 RAM: [ {mem_t} ] {mem_p}%
 💾 Disk: [ {total} ] {disk}%
 🔺 UP : {num_upload}  | 🔻 DL : {num_active}  | ♻️ TOTAL : {tasks}
-
-Made with ❤️ by {CREDIT_NAME} 🔥
 """
     return stats
 dispatcher.add_handler(
