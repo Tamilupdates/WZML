@@ -307,7 +307,7 @@ help_string_telegraph_admin = f'''
 <br><br>
 • <b>/{BotCommands.RmPaidCommand}</b>: Unauthorize Paid users (Only Owner)
 <br><br>
-• <b>/{BotCommands.RestartCommand}</b>: Restart and update the bot (Only Owner & Sudo)
+• <b>/{BotCommands.RestartCommand[0]}</b>: Restart and update the bot (Only Owner & Sudo)
 <br><br>
 • <b>/{BotCommands.LogCommand}</b>: Get a log file of the bot. Handy for getting crash reports
 '''
