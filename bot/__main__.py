@@ -357,6 +357,7 @@ if SET_BOT_COMMANDS:
         (f'{BotCommands.MediaInfoCommand}','Get Information of telegram Files'),
         (f'{BotCommands.PreNameCommand}','Set Prename for Leech Files'),
         (f'{BotCommands.CaptionCommand}','Set Caption for Leech Files'),
+        (f'{BotCommands.UserLogCommand}','Set Dump Channel for Leech Files'),
         (f'{BotCommands.ScrapeCommand}','Scrape Links from Website'),
         (f'{BotCommands.StatusCommand}','Get mirror status message'),
         (f'{BotCommands.StatsCommand}','Show the Stats of machine the bot'),
