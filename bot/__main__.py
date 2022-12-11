@@ -278,9 +278,9 @@ help_string_telegraph_user = f'''
 • <b>/weebhelp</b>: Okatu helper
 '''
 
-help_admin = telegraph.create_page(
+help_user = telegraph.create_page(
     title=f'{TITLE_NAME} HELP',
-    content=help_admin,
+    content=help_string_telegraph_user,
 )["path"]
 
 help_string_telegraph_admin = f'''
@@ -312,7 +312,7 @@ help_string_telegraph_admin = f'''
 
 help_admin = telegraph.create_page(
     title=f'{TITLE_NAME} HELP',
-    content=help_admin,
+    content=help_string_telegraph_admin,
 )["path"]
 
 
