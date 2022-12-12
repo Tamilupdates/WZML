@@ -20,9 +20,9 @@ def scrape(update, context):
                 link = message.text.split(' ', 1)
                 if len(link) != 2:
                     help_msg = "<b>Send link after command:</b>"
-                    help_msg += f"\n<code>/{BotCommands.ScrapeCommand}" + " {link}" + "</code>"
+                    help_msg += f"\n<code>/{BotCommands.ScrapeCommand[0]}" + " {link}" + "</code>"
                     help_msg += "\n<b>By replying to message (including link):</b>"
-                    help_msg += f"\n<code>/{BotCommands.ScrapeCommand}" + " {message}" + "</code>"
+                    help_msg += f"\n<code>/{BotCommands.ScrapeCommand[0]}" + " {message}" + "</code>"
                     return sendMessage(help_msg, context.bot, update.message)
                 link = link[1]
             try: link = re.match(r"((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*", link)[0]
@@ -46,9 +46,9 @@ def scrape(update, context):
             link = message.text.split(' ', 1)
             if len(link) != 2:
                 help_msg = "<b>Send link after command:</b>"
-                help_msg += f"\n<code>/{BotCommands.ScrapeCommand}" + " {link}" + "</code>"
+                help_msg += f"\n<code>/{BotCommands.ScrapeCommand[0]}" + " {link}" + "</code>"
                 help_msg += "\n<b>By replying to message (including link):</b>"
-                help_msg += f"\n<code>/{BotCommands.ScrapeCommand}" + " {message}" + "</code>"
+                help_msg += f"\n<code>/{BotCommands.ScrapeCommand[0]}" + " {message}" + "</code>"
                 return sendMessage(help_msg, context.bot, update.message)
             link = link[1]
         try: link = re.match(r"((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*", link)[0]

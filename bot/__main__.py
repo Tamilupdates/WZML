@@ -203,53 +203,53 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.HelpCommand}</b>: To get this message
 <br><br>
-• <b>/{BotCommands.MirrorCommand}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand}</b> for more help
+• <b>/{BotCommands.MirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand[0]}</b> for more help
 <br><br>
-• <b>/{BotCommands.ZipMirrorCommand}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder compressed with zip extension
+• <b>/{BotCommands.ZipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder compressed with zip extension
 <br><br>
-• <b>/{BotCommands.UnzipMirrorCommand}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder extracted from any archive extension
+• <b>/{BotCommands.UnzipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder extracted from any archive extension
 <br><br>
-• <b>/{BotCommands.QbMirrorCommand}</b> [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use <b>/{BotCommands.QbMirrorCommand} s</b> to select files before downloading
+• <b>/{BotCommands.QbMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use <b>/{BotCommands.QbMirrorCommand[0]} s</b> to select files before downloading
 <br><br>
-• <b>/{BotCommands.QbZipMirrorCommand}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
+• <b>/{BotCommands.QbZipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
 <br><br>
-• <b>/{BotCommands.QbUnzipMirrorCommand}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
+• <b>/{BotCommands.QbUnzipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
 <br><br>
-• <b>/{BotCommands.LeechCommand}</b> [download_url][magnet_link]: Start leeching to Telegram, Use <b>/{BotCommands.LeechCommand} s</b> to select files before leeching
+• <b>/{BotCommands.LeechCommand[0]}</b> [download_url][magnet_link]: Start leeching to Telegram, Use <b>/{BotCommands.LeechCommand[0]} s</b> to select files before leeching
 <br><br>
-• <b>/{BotCommands.ZipLeechCommand}</b> [download_url][magnet_link]: Start leeching to Telegram and upload the file/folder compressed with zip extension
+• <b>/{BotCommands.ZipLeechCommand[0]}</b> [download_url][magnet_link]: Start leeching to Telegram and upload the file/folder compressed with zip extension
 <br><br>
-• <b>/{BotCommands.UnzipLeechCommand}</b> [download_url][magnet_link][torent_file]: Start leeching to Telegram and upload the file/folder extracted from any archive extension
+• <b>/{BotCommands.UnzipLeechCommand[0]}</b> [download_url][magnet_link][torent_file]: Start leeching to Telegram and upload the file/folder extracted from any archive extension
 <br><br>
-• <b>/{BotCommands.QbLeechCommand}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent, Use <b>/{BotCommands.QbLeechCommand} s</b> to select files before leeching
+• <b>/{BotCommands.QbLeechCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent, Use <b>/{BotCommands.QbLeechCommand[0]} s</b> to select files before leeching
 <br><br>
-• <b>/{BotCommands.QbZipLeechCommand}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder compressed with zip extension
+• <b>/{BotCommands.QbZipLeechCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder compressed with zip extension
 <br><br>
-• <b>/{BotCommands.QbUnzipLeechCommand}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder extracted from any archive extension
+• <b>/{BotCommands.QbUnzipLeechCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder extracted from any archive extension
 <br><br>
-• <b>/{BotCommands.CloneCommand}</b> [drive_url][gdtot_url]: Copy file/folder to Google Drive
+• <b>/{BotCommands.CloneCommand[0]}</b> [drive_url][gdtot_url]: Copy file/folder to Google Drive
 <br><br>
 • <b>/{BotCommands.CountCommand}</b> [drive_url][gdtot_url]: Count file/folder of Google Drive
 <br><br>
 • <b>/{BotCommands.DeleteCommand}</b> [drive_url]: Delete file/folder from Google Drive (Only Owner & Sudo)
 <br><br>
-• <b>/{BotCommands.WatchCommand}</b> [yt-dlp supported link]: Mirror yt-dlp supported link. Send <b>/{BotCommands.WatchCommand}</b> for more help
+• <b>/{BotCommands.WatchCommand[0]}</b> [yt-dlp supported link]: Mirror yt-dlp supported link. Send <b>/{BotCommands.WatchCommand[0]}</b> for more help
 <br><br>
-• <b>/{BotCommands.ZipWatchCommand}</b> [yt-dlp supported link]: Mirror yt-dlp supported link as zip
+• <b>/{BotCommands.ZipWatchCommand[0]}</b> [yt-dlp supported link]: Mirror yt-dlp supported link as zip
 <br><br>
-• <b>/{BotCommands.LeechWatchCommand}</b> [yt-dlp supported link]: Leech yt-dlp supported link
+• <b>/{BotCommands.LeechWatchCommand[0]}</b> [yt-dlp supported link]: Leech yt-dlp supported link
 <br><br>
-• <b>/{BotCommands.LeechZipWatchCommand}</b> [yt-dlp supported link]: Leech yt-dlp supported link as zip
+• <b>/{BotCommands.LeechZipWatchCommand[0]}</b> [yt-dlp supported link]: Leech yt-dlp supported link as zip
 <br><br>
-• <b>/{BotCommands.PreNameCommand}</b>: Set Prename to leech files
+• <b>/{BotCommands.PreNameCommand[0]}</b>: Set Prename to leech files
 <br><br>
-• <b>/{BotCommands.CaptionCommand}</b>: Set Caption for leech files
+• <b>/{BotCommands.CaptionCommand[0]}</b>: Set Caption for leech files
 <br><br>
-• <b>/{BotCommands.UserLogCommand}</b>: Add Dump Channel for leech files. make sure bot should an admin in dump channel.
+• <b>/{BotCommands.UserLogCommand[0]}</b>: Add Dump Channel for leech files. make sure bot should an admin in dump channel.
 <br><br>
-• <b>/{BotCommands.LeechSetCommand}</b>: Leech settings
+• <b>/{BotCommands.LeechSetCommand[0]}</b>: Leech settings
 <br><br>
-• <b>/{BotCommands.SetThumbCommand}</b>: Reply photo to set it as Thumbnail
+• <b>/{BotCommands.SetThumbCommand[0]}</b>: Reply photo to set it as Thumbnail
 <br><br>
 • <b>/{BotCommands.RssListCommand}</b>: List all subscribed rss feed info
 <br><br>
@@ -263,9 +263,9 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.CancelMirror}</b>: Reply to the message by which the download was initiated and that download will be cancelled
 <br><br>
-• <b>/{BotCommands.CancelAllCommand}</b>: Cancel all downloading tasks
+• <b>/{BotCommands.CancelAllCommand[0]}</b>: Cancel all downloading tasks
 <br><br>
-• <b>/{BotCommands.ListCommand}</b> [query]: Search in Google Drive(s)
+• <b>/{BotCommands.ListCommand[0]}</b> [query]: Search in Google Drive(s)
 <br><br>
 • <b>/{BotCommands.SearchCommand}</b> [query]: Search for torrents with API
 <br>sites: <code>rarbg, 1337x, yts, etzv, tgx, torlock, piratebay, nyaasi, ettv</code><br><br>
@@ -273,48 +273,53 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.StatsCommand}</b>: Show Stats of the machine the bot is hosted on
 <br><br>
-• <b>/{BotCommands.SpeedCommand}</b>: Speedtest of server
+• <b>/{BotCommands.SpeedCommand[0]}</b>: Speedtest of server
 <br><br>
 • <b>/weebhelp</b>: Okatu helper
 '''
 
-help_user = telegraph.create_page(
-    title=f'{TITLE_NAME} Help',
-    content=help_string_telegraph_user,
-)["path"]
+try:
+    help_user = telegraph.create_page(
+        title=f'{TITLE_NAME} Help',
+        content=help_string_telegraph_user,
+    )["path"]
+except Exception as err:
+    LOGGER.warning(f"Telegraph Error: {err}")
+
 
 help_string_telegraph_admin = f'''
 <b><u>Admin Commands 🛡️</u></b>
 <br><br>
 • <b>/{BotCommands.PingCommand}</b>: Check how long it takes to Ping the Bot
 <br><br>
-• <b>/{BotCommands.AuthorizeCommand}</b>: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+• <b>/{BotCommands.AuthorizeCommand[0]}</b>: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 <br><br>
-• <b>/{BotCommands.UnAuthorizeCommand}</b>: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+• <b>/{BotCommands.UnAuthorizeCommand[0]}</b>: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 <br><br>
-• <b>/{BotCommands.AuthorizedUsersCommand}</b>: Show authorized users (Only Owner & Sudo)
+• <b>/{BotCommands.AuthorizedUsersCommand[0]}</b>: Show authorized users (Only Owner & Sudo)
 <br><br>
-• <b>/{BotCommands.AddSudoCommand}</b>: Add sudo user (Only Owner)
+• <b>/{BotCommands.AddSudoCommand[0]}</b>: Add sudo user (Only Owner)
 <br><br>
-• <b>/{BotCommands.RmSudoCommand}</b>: Remove sudo users (Only Owner)
+• <b>/{BotCommands.RmSudoCommand[0]}</b>: Remove sudo users (Only Owner)
 <br><br>
-• <b>/{BotCommands.PaidUsersCommand}</b>: Show Paid users (Only Owner & Sudo)
+• <b>/{BotCommands.PaidUsersCommand[0]}</b>: Show Paid users (Only Owner & Sudo)
 <br><br>
-• <b>/{BotCommands.AddPaidCommand}</b>: Authorize Paid users (Only Owner)
+• <b>/{BotCommands.AddPaidCommand[0]}</b>: Authorize Paid users (Only Owner)
 <br><br>
-• <b>/{BotCommands.RmPaidCommand}</b>: Unauthorize Paid users (Only Owner)
+• <b>/{BotCommands.RmPaidCommand[0]}</b>: Unauthorize Paid users (Only Owner)
 <br><br>
 • <b>/{BotCommands.RestartCommand[0]}</b>: Restart and update the bot (Only Owner & Sudo)
 <br><br>
 • <b>/{BotCommands.LogCommand}</b>: Get a log file of the bot. Handy for getting crash reports
 '''
 
-
-help_admin = telegraph.create_page(
-    title=f'{TITLE_NAME} Help',
-    content=help_string_telegraph_admin,
-)["path"]
-
+try:
+    help_admin = telegraph.create_page(
+        title=f'{TITLE_NAME} Help',
+        content=help_string_telegraph_admin,
+    )["path"]
+except Exception as err:
+    LOGGER.warning(f"Telegraph Error: {err}")
 
 def bot_help(update, context):
     button = ButtonMaker()
@@ -327,43 +332,46 @@ def bot_help(update, context):
     sendMarkup(help_string, context.bot, update.message, button.build_menu(2))
 
 
+
 if SET_BOT_COMMANDS:
     botcmds = [
-        (f'{BotCommands.MirrorCommand}', 'Mirror'),
-        (f'{BotCommands.ZipMirrorCommand}','Mirror and upload as zip'),
-        (f'{BotCommands.UnzipMirrorCommand}','Mirror and extract files'),
-        (f'{BotCommands.QbMirrorCommand}','Mirror torrent using qBittorrent'),
-        (f'{BotCommands.QbZipMirrorCommand}','Mirror torrent and upload as zip using qb'),
-        (f'{BotCommands.QbUnzipMirrorCommand}','Mirror torrent and extract files using qb'),
-        (f'{BotCommands.LeechCommand}','Leech'),
-        (f'{BotCommands.ZipLeechCommand}','Leech and upload as zip'),
-        (f'{BotCommands.UnzipLeechCommand}','Leech and extract files'),
-        (f'{BotCommands.QbLeechCommand}','Leech torrent using qBittorrent'),
-        (f'{BotCommands.QbZipLeechCommand}','Leech torrent and upload as zip using qb'),
-        (f'{BotCommands.QbUnzipLeechCommand}','Leech torrent and extract using qb'),
-        (f'{BotCommands.WatchCommand}','Mirror yt-dlp supported link'),
-        (f'{BotCommands.ZipWatchCommand}','Mirror yt-dlp supported link as zip'),
-        (f'{BotCommands.LeechWatchCommand}','Leech yt-dlp supported link'),
-        (f'{BotCommands.LeechZipWatchCommand}','Leech yt-dlp supported link as zip'),
-        (f'{BotCommands.LeechSetCommand}','Leech settings'),
-        (f'{BotCommands.SetThumbCommand}','Set thumbnail'),
-        (f'{BotCommands.SpeedCommand}','Speedtest'),
-        (f'{BotCommands.MediaInfoCommand}','Get Information of telegram Files'),
-        (f'{BotCommands.PreNameCommand}','Set Prename for Leech Files'),
-        (f'{BotCommands.CaptionCommand}','Set Caption for Leech Files'),
-        (f'{BotCommands.UserLogCommand}','Set Dump Channel for Leech Files'),
-        (f'{BotCommands.ScrapeCommand}','Scrape Links from Website'),
+        (f'{BotCommands.MirrorCommand[0]}', 'Mirror'),
+        (f'{BotCommands.ZipMirrorCommand[0]}','Mirror and upload as zip'),
+        (f'{BotCommands.UnzipMirrorCommand[0]}','Mirror and extract files'),
+        (f'{BotCommands.QbMirrorCommand[0]}','Mirror torrent using qBittorrent'),
+        (f'{BotCommands.QbZipMirrorCommand[0]}','Mirror torrent and upload as zip using qb'),
+        (f'{BotCommands.QbUnzipMirrorCommand[0]}','Mirror torrent and extract files using qb'),
+        (f'{BotCommands.LeechCommand[0]}','Leech'),
+        (f'{BotCommands.ZipLeechCommand[0]}','Leech and upload as zip'),
+        (f'{BotCommands.UnzipLeechCommand[0]}','Leech and extract files'),
+        (f'{BotCommands.QbLeechCommand[0]}','Leech torrent using qBittorrent'),
+        (f'{BotCommands.QbZipLeechCommand[0]}','Leech torrent and upload as zip using qb'),
+        (f'{BotCommands.QbUnzipLeechCommand[0]}','Leech torrent and extract using qb'),
+        (f'{BotCommands.WatchCommand[0]}','Mirror yt-dlp supported link'),
+        (f'{BotCommands.ZipWatchCommand[0]}','Mirror yt-dlp supported link as zip'),
+        (f'{BotCommands.LeechWatchCommand[0]}','Leech yt-dlp supported link'),
+        (f'{BotCommands.LeechZipWatchCommand[0]}','Leech yt-dlp supported link as zip'),
+        (f'{BotCommands.SetThumbCommand[0]}','Set thumbnail'),
+        (f'{BotCommands.PreNameCommand[0]}','Set Prename for Leech Files'),
+        (f'{BotCommands.CaptionCommand[0]}','Set Caption for Leech Files'),
+        (f'{BotCommands.UserLogCommand[0]}','Set Dump Channel for Leech Files'),
+        (f'{BotCommands.LeechSetCommand[0]}','Leech settings'),
+        (f'{BotCommands.CloneCommand[0]}','Copy file/folder to Drive'),
+        (f'{BotCommands.ListCommand[0]}','Search in Drive'),
+        (f'{BotCommands.ScrapeCommand[0]}','Scrape Links from Website'),
+        (f'{BotCommands.SearchCommand}','Search in Torrent'),
+        (f'{BotCommands.SpeedCommand[0]}','Speedtest'),
         (f'{BotCommands.StatusCommand}','Get mirror status message'),
         (f'{BotCommands.StatsCommand}','Show the Stats of machine the bot'),
-        (f'{BotCommands.ListCommand}','Search in Drive'),
-        (f'{BotCommands.CloneCommand}','Copy file/folder to Drive'),
+        (f'{BotCommands.MediaInfoCommand[0]}','Get Information of telegram Files'),
         (f'{BotCommands.DeleteCommand}','Delete file/folder from Drive'),
         (f'{BotCommands.CancelMirror}','Cancel a task'),
-        (f'{BotCommands.SearchCommand}','Search in Torrent'),
+        (f'{BotCommands.CancelAllCommand[0]}','Cancel all downloading tasks'),
+        (f'{BotCommands.HelpCommand}','Get detailed help'),
         (f'{BotCommands.PingCommand}','Ping the bot'),
-        (f'{BotCommands.HelpCommand}','Get detailed help')
+        (f'{BotCommands.LogCommand}','Get the bot Log'),
+        (f'{BotCommands.RestartCommand[0]}','Restart the bot')
     ]
-
 
 def main():
 

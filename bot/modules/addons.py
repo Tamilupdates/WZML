@@ -15,8 +15,8 @@ def prename_set(update, context):
     u_men = update.message.from_user.first_name
     if PAID_SERVICE is True:
         if user_id_ in PAID_USERS and OWNER_ID:
-            if (BotCommands.PreNameCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
-                sendMessage(f'<b>Set Prename Like👇 \n/{BotCommands.PreNameCommand} channelName</b>', context.bot, update.message)
+            if (BotCommands.PreNameCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
+                sendMessage(f'<b>Set Prename Like👇 \n/{BotCommands.PreNameCommand[0]} channelName</b>', context.bot, update.message)
             else:
                 lm = sendMessage(f"<b>Please Wait....Processing🤖</b>", context.bot, update.message)
                 pre_send = update.message.text.split(" ", maxsplit=1)
@@ -36,8 +36,8 @@ def prename_set(update, context):
         else:
             sendMessage(f"<b>#Buy Paid Service to use Feature.\n\n#Contact : Admin - @{AUTHOR_NAME} 😎</b>", context.bot, update.message)
     else:
-        if (BotCommands.PreNameCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
-            sendMessage(f'<b>Set Prename Like👇 \n/{BotCommands.PreNameCommand} channelName</b>', context.bot, update.message)
+        if (BotCommands.PreNameCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
+            sendMessage(f'<b>Set Prename Like👇 \n/{BotCommands.PreNameCommand[0]} channelName</b>', context.bot, update.message)
         else:
             lm = sendMessage(f"<b>Please Wait....Processing🤖</b>", context.bot, update.message)
             pre_send = update.message.text.split(" ", maxsplit=1)
@@ -61,8 +61,8 @@ def caption_set(update, context):
     u_men = update.message.from_user.first_name
     if PAID_SERVICE is True:
         if user_id_ in PAID_USERS and OWNER_ID:
-            if (BotCommands.CaptionCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
-                sendMessage(f'<b>Set Caption Like👇 \n/{BotCommands.CaptionCommand} text</b>', context.bot, update.message)
+            if (BotCommands.CaptionCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
+                sendMessage(f'<b>Set Caption Like👇 \n/{BotCommands.CaptionCommand[0]} text</b>', context.bot, update.message)
             else:
                 lm = sendMessage(f"<b>Please Wait....Processing🤖</b>", context.bot, update.message)
                 pre_send = update.message.text.split(" ", maxsplit=1)
@@ -82,8 +82,8 @@ def caption_set(update, context):
         else:
             sendMessage(f"<b>#Buy Paid Service to use Feature.\n\n#Contact Admin - @{AUTHOR_NAME} 😎</b>", context.bot, update.message)
     else:
-        if (BotCommands.CaptionCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
-            sendMessage(f'<b>Set Caption Like👇 \n/{BotCommands.CaptionCommand} text</b>', context.bot, update.message)
+        if (BotCommands.CaptionCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
+            sendMessage(f'<b>Set Caption Like👇 \n/{BotCommands.CaptionCommand[0]} text</b>', context.bot, update.message)
         else:
             lm = sendMessage(f"<b>Please Wait....Processing🤖</b>", context.bot, update.message)
             pre_send = update.message.text.split(" ", maxsplit=1)
@@ -107,8 +107,8 @@ def userlog_set(update, context):
     u_men = update.message.from_user.first_name
     if PAID_SERVICE is True:
         if user_id_ in PAID_USERS and OWNER_ID:
-            if (BotCommands.UserLogCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
-                sendMessage(f'Send Your Backup Channel ID alone with command like \n\n{BotCommands.UserLogCommand} -100xxxxxxx', context.bot, update.message)
+            if (BotCommands.UserLogCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
+                sendMessage(f'Send Your Backup Channel ID alone with command like \n\n{BotCommands.UserLogCommand[0]} -100xxxxxxx', context.bot, update.message)
             else:
                 lm = sendMessage("Please wait...🤖", context.bot, update.message)          
                 pre_send = update.message.text.split(" ", maxsplit=1)
@@ -128,8 +128,8 @@ def userlog_set(update, context):
         else:
             sendMessage(f"<b>#Buy Paid Service to use Feature.\n\n#Contact : Admin - @{AUTHOR_NAME} 😎</b>", context.bot, update.message)
     else:
-        if (BotCommands.UserLogCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
-            sendMessage(f'Send Your Backup Channel ID alone with command like \n\n{BotCommands.UserLogCommand} -100xxxxxxx', context.bot, update.message)
+        if (BotCommands.UserLogCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
+            sendMessage(f'Send Your Backup Channel ID alone with command like \n\n{BotCommands.UserLogCommand[0]} -100xxxxxxx', context.bot, update.message)
         else:
             lm = sendMessage("Please wait...🤖", context.bot, update.message)          
             pre_send = update.message.text.split(" ", maxsplit=1)

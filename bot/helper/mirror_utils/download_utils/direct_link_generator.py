@@ -39,7 +39,7 @@ fmed_list = ['fembed.net', 'fembed.com', 'femax20.com', 'fcdn.stream', 'feurl.co
 def direct_link_generator(link: str):
     """ direct links generator """
     if 'youtube.com' in link or 'youtu.be' in link:
-        raise DirectDownloadLinkException(f"ERROR: Use /{BotCommands.WatchCommand} to mirror Youtube link\nUse /{BotCommands.ZipWatchCommand} to make zip of Youtube playlist")
+        raise DirectDownloadLinkException(f"ERROR: Use /{BotCommands.WatchCommand[0]} to mirror Youtube link\nUse /{BotCommands.ZipWatchCommand[0]} to make zip of Youtube playlist")
     elif 'zippyshare.com' in link:
         return zippy_share(link)
     elif 'yadi.sk' in link or 'disk.yandex.com' in link:
@@ -353,7 +353,7 @@ def fichier(link: str) -> str:
             else:
                 raise DirectDownloadLinkException(f"ERROR: 1fichier is on a limit. Please wait {numbers[0]} minute.")
         elif "protect access" in str(str_2).lower():
-          raise DirectDownloadLinkException(f"ERROR: This link requires a password!\n\n<b>This link requires a password!</b>\n- Insert sign <b>::</b> after the link and write the password after the sign.\n\n<b>Example:</b>\n<code>/{BotCommands.MirrorCommand} https://1fichier.com/?smmtd8twfpm66awbqz04::love you</code>\n\n* No spaces between the signs <b>::</b>\n* For the password, you can use a space!")
+          raise DirectDownloadLinkException(f"ERROR: This link requires a password!\n\n<b>This link requires a password!</b>\n- Insert sign <b>::</b> after the link and write the password after the sign.\n\n<b>Example:</b>\n<code>/{BotCommands.MirrorCommand[0]} https://1fichier.com/?smmtd8twfpm66awbqz04::love you</code>\n\n* No spaces between the signs <b>::</b>\n* For the password, you can use a space!")
         else:
             print(str_2)
             raise DirectDownloadLinkException("ERROR: Failed to generate Direct Link from 1fichier!")
