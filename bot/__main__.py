@@ -367,10 +367,10 @@ if SET_BOT_COMMANDS:
         (f'{BotCommands.DeleteCommand}','Delete file/folder from Drive'),
         (f'{BotCommands.CancelMirror}','Cancel a task'),
         (f'{BotCommands.CancelAllCommand[0]}','Cancel all downloading tasks'),
-        (f'{BotCommands.HelpCommand}','Get detailed help'),
+#        (f'{BotCommands.LogCommand}','Get the bot Log'),
+#        (f'{BotCommands.RestartCommand[0]}','Restart the bot'),
         (f'{BotCommands.PingCommand}','Ping the bot'),
-        (f'{BotCommands.LogCommand}','Get the bot Log'),
-        (f'{BotCommands.RestartCommand[0]}','Restart the bot')
+        (f'{BotCommands.HelpCommand}','Get detailed help')
     ]
 
 def main():
