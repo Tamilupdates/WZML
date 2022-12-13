@@ -292,11 +292,11 @@ help_string_telegraph_admin = f'''
 <br><br>
 • <b>/{BotCommands.PingCommand}</b>: Check how long it takes to Ping the Bot
 <br><br>
-• <b>/{BotCommands.AuthorizeCommand[0]}</b>: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+• <b>/authorize</b>: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 <br><br>
-• <b>/{BotCommands.UnAuthorizeCommand[0]}</b>: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+• <b>/unauthorize</b>: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 <br><br>
-• <b>/{BotCommands.AuthorizedUsersCommand[0]}</b>: Show authorized users (Only Owner & Sudo)
+• <b>/users</b>: Show authorized users (Only Owner & Sudo)
 <br><br>
 • <b>/{BotCommands.AddSudoCommand[0]}</b>: Add sudo user (Only Owner)
 <br><br>
@@ -367,10 +367,8 @@ if SET_BOT_COMMANDS:
         (f'{BotCommands.DeleteCommand}','Delete file/folder from Drive'),
         (f'{BotCommands.CancelMirror}','Cancel a task'),
         (f'{BotCommands.CancelAllCommand[0]}','Cancel all downloading tasks'),
-        (f'{BotCommands.HelpCommand}','Get detailed help'),
         (f'{BotCommands.PingCommand}','Ping the bot'),
-        (f'{BotCommands.LogCommand}','Get the bot Log'),
-        (f'{BotCommands.RestartCommand[0]}','Restart the bot')
+        (f'{BotCommands.HelpCommand}','Get detailed help')
     ]
 
 def main():
