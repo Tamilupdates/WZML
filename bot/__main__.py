@@ -269,7 +269,7 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.SearchCommand}</b> [query]: Search for torrents with API
 <br>sites: <code>rarbg, 1337x, yts, etzv, tgx, torlock, piratebay, nyaasi, ettv</code><br><br>
-• <b>/{BotCommands.StatusCommand}</b>: Shows a status of all the downloads
+• <b>/{BotCommands.StatusCommand[0]}</b>: Shows a status of all the downloads
 <br><br>
 • <b>/{BotCommands.StatsCommand}</b>: Show Stats of the machine the bot is hosted on
 <br><br>
@@ -361,7 +361,7 @@ if SET_BOT_COMMANDS:
         (f'{BotCommands.ScrapeCommand[0]}','Scrape Links from Website'),
         (f'{BotCommands.SearchCommand}','Search in Torrent'),
         (f'{BotCommands.SpeedCommand[0]}','Speedtest'),
-        (f'{BotCommands.StatusCommand}','Get mirror status message'),
+        (f'{BotCommands.StatusCommand[0]}','Get mirror status message'),
         (f'{BotCommands.StatsCommand}','Show the Stats of machine the bot'),
         (f'{BotCommands.MediaInfoCommand[0]}','Get Information of telegram Files'),
         (f'{BotCommands.DeleteCommand}','Delete file/folder from Drive'),
