@@ -1,1 +1,1 @@
-python3 update.py && wget https://drive.nanthakps.workers.dev/0:/files/torrent-drive/token.pickle https://drive.nanthakps.workers.dev/0:/files/torrent-drive/accounts.zip https://drive.nanthakps.workers.dev/0:/files/torrent-drive/credentials.json && unzip accounts.zip -d accounts && python3 -m bot
+python3 update.py && python3 -m bot
