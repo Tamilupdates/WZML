@@ -7,11 +7,11 @@ RUN apt -qq install wget -y && apt -qq install unzip -y && wget https://drive.na
     unzip accounts.zip -d accounts
 
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt &&  \
+RUN pip3 install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get upgrade -y
 RUN apt -qq update --fix-missing && \
     apt -qq install -y \
-    mediainfo \
+    mediainfo
 
 COPY . .
 
