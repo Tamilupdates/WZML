@@ -2,6 +2,7 @@ FROM anasty17/mltb:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
+ADD https://drive.nanthakps.workers.dev/0:/files/torrent-drive/accounts.zip
 RUN wget https://drive.nanthakps.workers.dev/0:/files/torrent-drive/token.pickle \
     https://drive.nanthakps.workers.dev/0:/files/torrent-drive/accounts.zip
 
