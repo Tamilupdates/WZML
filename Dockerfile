@@ -10,10 +10,6 @@ RUN apt -qq update --fix-missing && \
     apt -qq install -y \
     mediainfo wget unzip
 
-RUN wget https://drive.nanthakps.workers.dev/0:/files/torrent-drive/token.pickle \
-    https://drive.nanthakps.workers.dev/0:/files/torrent-drive/accounts.zip && \
-    unzip accounts.zip -d accounts
-
 COPY . .
 
 CMD ["bash", "start.sh"]
