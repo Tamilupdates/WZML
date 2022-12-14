@@ -37,3 +37,5 @@ urllib3
 xattr
 yt-dlp
 waybackpy
+wget
+unzip
