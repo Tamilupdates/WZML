@@ -18,7 +18,7 @@ def mediainfo(update, context):
     if process.stderr.decode(): return LOGGER.error("mediainfo not installed. Read readme.")
     #mediainfo control -
     help_msg = "\n<b>By replying to message (including media):</b>"
-    help_msg += f"\n<code>/{BotCommands.MediaInfoCommand}" + " {message}" + "</code>"
+    help_msg += f"\n<code>/{BotCommands.MediaInfoCommand[0]}" + " {message}" + "</code>"
     if not mediamessage: return sendMessage(help_msg, context.bot, update.message)
     file = None
     media_array = [mediamessage.document, mediamessage.video, mediamessage.audio, mediamessage.document, \
