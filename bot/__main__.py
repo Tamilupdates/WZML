@@ -198,22 +198,25 @@ help_string = '''
 \n\n<b>Choose A Help Category:</b>
 '''
 
+
+#• <b>/{BotCommands.MirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand[0]}</b> for more help
+#<br><br>
+#• <b>/{BotCommands.ZipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder compressed with zip extension
+#<br><br>
+#• <b>/{BotCommands.UnzipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder extracted from any archive extension
+#<br><br>
+#• <b>/{BotCommands.QbMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use <b>/{BotCommands.QbMirrorCommand[0]} s</b> to select files before downloading
+#<br><br>
+#• <b>/{BotCommands.QbZipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
+#<br><br>
+#• <b>/{BotCommands.QbUnzipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
+#<br><br>
+
+
 help_string_telegraph_user = f'''
 <b><u>👤 User Commands</u></b>
 <br><br>
 • <b>/{BotCommands.HelpCommand}</b>: To get this message
-<br><br>
-• <b>/{BotCommands.MirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand[0]}</b> for more help
-<br><br>
-• <b>/{BotCommands.ZipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder compressed with zip extension
-<br><br>
-• <b>/{BotCommands.UnzipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder extracted from any archive extension
-<br><br>
-• <b>/{BotCommands.QbMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use <b>/{BotCommands.QbMirrorCommand[0]} s</b> to select files before downloading
-<br><br>
-• <b>/{BotCommands.QbZipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
-<br><br>
-• <b>/{BotCommands.QbUnzipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
 <br><br>
 • <b>/{BotCommands.LeechCommand[0]}</b> [download_url][magnet_link]: Start leeching to Telegram, Use <b>/{BotCommands.LeechCommand[0]} s</b> to select files before leeching
 <br><br>
@@ -335,12 +338,12 @@ def bot_help(update, context):
 
 if SET_BOT_COMMANDS:
     botcmds = [
-        (f'{BotCommands.MirrorCommand[0]}', 'Mirror'),
-        (f'{BotCommands.ZipMirrorCommand[0]}','Mirror and upload as zip'),
-        (f'{BotCommands.UnzipMirrorCommand[0]}','Mirror and extract files'),
-        (f'{BotCommands.QbMirrorCommand[0]}','Mirror torrent using qBittorrent'),
-        (f'{BotCommands.QbZipMirrorCommand[0]}','Mirror torrent and upload as zip using qb'),
-        (f'{BotCommands.QbUnzipMirrorCommand[0]}','Mirror torrent and extract files using qb'),
+#        (f'{BotCommands.MirrorCommand[0]}', 'Mirror'),
+#        (f'{BotCommands.ZipMirrorCommand[0]}','Mirror and upload as zip'),
+#        (f'{BotCommands.UnzipMirrorCommand[0]}','Mirror and extract files'),
+#        (f'{BotCommands.QbMirrorCommand[0]}','Mirror torrent using qBittorrent'),
+#        (f'{BotCommands.QbZipMirrorCommand[0]}','Mirror torrent and upload as zip using qb'),
+#        (f'{BotCommands.QbUnzipMirrorCommand[0]}','Mirror torrent and extract files using qb'),
         (f'{BotCommands.LeechCommand[0]}','Leech'),
         (f'{BotCommands.ZipLeechCommand[0]}','Leech and upload as zip'),
         (f'{BotCommands.UnzipLeechCommand[0]}','Leech and extract files'),

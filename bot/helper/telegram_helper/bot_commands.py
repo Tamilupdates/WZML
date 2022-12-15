@@ -12,9 +12,9 @@ def getCommand(name: str, command: str):
 class _BotCommands:
     def __init__(self):
         self.StartCommand = getCommand(f'START_COMMAND', f'start{CMD_INDEX}'), f'srt{CMD_INDEX}'
-        self.MirrorCommand = getCommand('MIRROR_COMMAND', f'mirror{CMD_INDEX}'), f'm{CMD_INDEX}'
-        self.UnzipMirrorCommand = getCommand('UNZIP_COMMAND', f'unzipmirror{CMD_INDEX}'), f'uzm{CMD_INDEX}'
-        self.ZipMirrorCommand = getCommand('ZIP_COMMAND', f'zipmirror{CMD_INDEX}'), f'zm{CMD_INDEX}'
+        self.MirrorCommand = getCommand('MIRROR_COMMAND', f'kpsmirror{CMD_INDEX}'), f'kpsm{CMD_INDEX}'
+        self.UnzipMirrorCommand = getCommand('UNZIP_COMMAND', f'kpsunzipmirror{CMD_INDEX}'), f'kpsuzm{CMD_INDEX}'
+        self.ZipMirrorCommand = getCommand('ZIP_COMMAND', f'kpszipmirror{CMD_INDEX}'), f'kpszm{CMD_INDEX}'
         self.CancelMirror = getCommand('CANCEL_COMMAND', f'cancel{CMD_INDEX}')
         self.CancelAllCommand = getCommand('CANCEL_ALL_COMMAND', f'cancelall{CMD_INDEX}'), f'ca{CMD_INDEX}'
         self.ListCommand = getCommand('LIST_COMMAND', f'list{CMD_INDEX}'), f'ls{CMD_INDEX}'
@@ -40,12 +40,12 @@ class _BotCommands:
         self.SpeedCommand = getCommand('SPEEDTEST_COMMAND', f'speedtest{CMD_INDEX}'), f'spd{CMD_INDEX}'
         self.CloneCommand = getCommand('CLONE_COMMAND', f'clone{CMD_INDEX}'), f'cl{CMD_INDEX}'
         self.CountCommand = getCommand('COUNT_COMMAND', f'count{CMD_INDEX}')
-        self.WatchCommand =  getCommand('WATCH_COMMAND', f'watch{CMD_INDEX}'), f'w{CMD_INDEX}'
-        self.ZipWatchCommand = getCommand('ZIPWATCH_COMMAND', f'zipwatch{CMD_INDEX}'), f'zw{CMD_INDEX}'
+        self.WatchCommand =  getCommand('WATCH_COMMAND', f'kpswatch{CMD_INDEX}'), f'kpsw{CMD_INDEX}'
+        self.ZipWatchCommand = getCommand('ZIPWATCH_COMMAND', f'kpszipwatch{CMD_INDEX}'), f'kpszw{CMD_INDEX}'
         self.ScrapeCommand = getCommand('SCRAPE_COMMAND', f'scrape{CMD_INDEX}'), f'scr{CMD_INDEX}'
-        self.QbMirrorCommand = getCommand('QBMIRROR_COMMAND', f'qbmirror{CMD_INDEX}'), f'qm{CMD_INDEX}'
-        self.QbUnzipMirrorCommand = getCommand('QBUNZIP_COMMAND', f'qbunzipmirror{CMD_INDEX}'), f'quzm{CMD_INDEX}'
-        self.QbZipMirrorCommand = getCommand('QBZIP_COMMAND', f'qbzipmirror{CMD_INDEX}'), f'qzm{CMD_INDEX}'
+        self.QbMirrorCommand = getCommand('QBMIRROR_COMMAND', f'kpsqbmirror{CMD_INDEX}'), f'kpsqm{CMD_INDEX}'
+        self.QbUnzipMirrorCommand = getCommand('QBUNZIP_COMMAND', f'kpsqbunzipmirror{CMD_INDEX}'), f'kpsquzm{CMD_INDEX}'
+        self.QbZipMirrorCommand = getCommand('QBZIP_COMMAND', f'kpsqbzipmirror{CMD_INDEX}'), f'kpsqzm{CMD_INDEX}'
         self.DeleteCommand = getCommand('DELETE_COMMAND', f'del{CMD_INDEX}')
         self.ShellCommand = getCommand('SHELL_COMMAND', f'shell{CMD_INDEX}')
         self.ExecHelpCommand = getCommand('EXEHELP_COMMAND', f'exechelp{CMD_INDEX}')
