@@ -201,15 +201,15 @@ help_string = '''
 '''
 • <b>/{BotCommands.MirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand[0]}</b> for more help
 <br><br>
-• <b>/{BotCommands.ZipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder compressed with zip extension
-<br><br>
 • <b>/{BotCommands.UnzipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder extracted from any archive extension
+<br><br>
+• <b>/{BotCommands.ZipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder compressed with zip extension
 <br><br>
 • <b>/{BotCommands.QbMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use <b>/{BotCommands.QbMirrorCommand[0]} s</b> to select files before downloading
 <br><br>
-• <b>/{BotCommands.QbZipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
-<br><br>
 • <b>/{BotCommands.QbUnzipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
+<br><br>
+• <b>/{BotCommands.QbZipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
 <br><br>
 
 • <b>/{BotCommands.WatchCommand[0]}</b> [yt-dlp supported link]: Mirror yt-dlp supported link. Send <b>/{BotCommands.WatchCommand[0]}</b> for more help
@@ -341,17 +341,17 @@ def bot_help(update, context):
 if SET_BOT_COMMANDS:
     botcmds = [
 #        (f'{BotCommands.MirrorCommand[0]}', 'Mirror'),
-#        (f'{BotCommands.ZipMirrorCommand[0]}','Mirror and upload as zip'),
 #        (f'{BotCommands.UnzipMirrorCommand[0]}','Mirror and extract files'),
+#        (f'{BotCommands.ZipMirrorCommand[0]}','Mirror and upload as zip'),
 #        (f'{BotCommands.QbMirrorCommand[0]}','Mirror torrent using qBittorrent'),
-#        (f'{BotCommands.QbZipMirrorCommand[0]}','Mirror torrent and upload as zip using qb'),
 #        (f'{BotCommands.QbUnzipMirrorCommand[0]}','Mirror torrent and extract files using qb'),
+#        (f'{BotCommands.QbZipMirrorCommand[0]}','Mirror torrent and upload as zip using qb'),
         (f'{BotCommands.LeechCommand[0]}','Leech'),
-        (f'{BotCommands.ZipLeechCommand[0]}','Leech and upload as zip'),
         (f'{BotCommands.UnzipLeechCommand[0]}','Leech and extract files'),
+        (f'{BotCommands.ZipLeechCommand[0]}','Leech and upload as zip'),
+        (f'{BotCommands.QbUnzipLeechCommand[0]}','Leech torrent and extract using qb'),
         (f'{BotCommands.QbLeechCommand[0]}','Leech torrent using qBittorrent'),
         (f'{BotCommands.QbZipLeechCommand[0]}','Leech torrent and upload as zip using qb'),
-        (f'{BotCommands.QbUnzipLeechCommand[0]}','Leech torrent and extract using qb'),
         (f'{BotCommands.WatchCommand[0]}','Mirror yt-dlp supported link'),
         (f'{BotCommands.ZipWatchCommand[0]}','Mirror yt-dlp supported link as zip'),
         (f'{BotCommands.LeechWatchCommand[0]}','Leech yt-dlp supported link'),
