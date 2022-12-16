@@ -35,10 +35,12 @@ LOGGER = getLogger(__name__)
 def getConfig(name: str):
     return environ[name]
 
+
 PRE_DICT = {}
 CAP_DICT = {}
 LEECH_DICT = {}
 TIME_GAP_STORE = {}
+
 
 load_dotenv('config.env', override=True)
 
