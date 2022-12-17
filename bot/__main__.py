@@ -198,53 +198,48 @@ help_string = '''
 \n\n<b>Choose A Help Category:</b>
 '''
 
-'''
-• <b>/{BotCommands.MirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand[0]}</b> for more help
-<br><br>
-• <b>/{BotCommands.ZipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder compressed with zip extension
-<br><br>
-• <b>/{BotCommands.UnzipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder extracted from any archive extension
-<br><br>
-• <b>/{BotCommands.QbMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use <b>/{BotCommands.QbMirrorCommand[0]} s</b> to select files before downloading
-<br><br>
-• <b>/{BotCommands.QbZipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
-<br><br>
-• <b>/{BotCommands.QbUnzipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
-<br><br>
-
-• <b>/{BotCommands.WatchCommand[0]}</b> [yt-dlp supported link]: Mirror yt-dlp supported link. Send <b>/{BotCommands.WatchCommand[0]}</b> for more help
-<br><br>
-• <b>/{BotCommands.ZipWatchCommand[0]}</b> [yt-dlp supported link]: Mirror yt-dlp supported link as zip
-<br><br>
-'''
-
-
 help_string_telegraph_user = f'''
 <b><u>👤 User Commands</u></b>
 <br><br>
 • <b>/{BotCommands.HelpCommand}</b>: To get this message
 <br><br>
-• <b>/{BotCommands.LeechCommand[0]}</b> [download_url][magnet_link]: Start leeching to Telegram, Use <b>/{BotCommands.LeechCommand[0]} s</b> to select files before leeching
+• <b>/{BotCommands.MirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand[0]}</b> for more help
 <br><br>
-• <b>/{BotCommands.ZipLeechCommand[0]}</b> [download_url][magnet_link]: Start leeching to Telegram and upload the file/folder compressed with zip extension
+• <b>/{BotCommands.UnzipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder extracted from any archive extension
+<br><br>
+• <b>/{BotCommands.ZipMirrorCommand[0]}</b> [download_url][magnet_link]: Start mirroring and upload the file/folder compressed with zip extension
+<br><br>
+• <b>/{BotCommands.QbMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start Mirroring using qBittorrent, Use <b>/{BotCommands.QbMirrorCommand[0]} s</b> to select files before downloading
+<br><br>
+• <b>/{BotCommands.QbUnzipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder extracted from any archive extension
+<br><br>
+• <b>/{BotCommands.QbZipMirrorCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start mirroring using qBittorrent and upload the file/folder compressed with zip extension
+<br><br>
+• <b>/{BotCommands.LeechCommand[0]}</b> [download_url][magnet_link]: Start leeching to Telegram, Use <b>/{BotCommands.LeechCommand[0]} s</b> to select files before leeching
 <br><br>
 • <b>/{BotCommands.UnzipLeechCommand[0]}</b> [download_url][magnet_link][torent_file]: Start leeching to Telegram and upload the file/folder extracted from any archive extension
 <br><br>
+• <b>/{BotCommands.ZipLeechCommand[0]}</b> [download_url][magnet_link]: Start leeching to Telegram and upload the file/folder compressed with zip extension
+<br><br>
 • <b>/{BotCommands.QbLeechCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent, Use <b>/{BotCommands.QbLeechCommand[0]} s</b> to select files before leeching
+<br><br>
+• <b>/{BotCommands.QbUnzipLeechCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder extracted from any archive extension
 <br><br>
 • <b>/{BotCommands.QbZipLeechCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder compressed with zip extension
 <br><br>
-• <b>/{BotCommands.QbUnzipLeechCommand[0]}</b> [magnet_link][torrent_file][torrent_file_url]: Start leeching to Telegram using qBittorrent and upload the file/folder extracted from any archive extension
+• <b>/{BotCommands.WatchCommand[0]}</b> [yt-dlp supported link]: Mirror yt-dlp supported link. Send <b>/{BotCommands.WatchCommand[0]}</b> for more help
+<br><br>
+• <b>/{BotCommands.ZipWatchCommand[0]}</b> [yt-dlp supported link]: Mirror yt-dlp supported link as zip
+<br><br>
+• <b>/{BotCommands.LeechWatchCommand[0]}</b> [yt-dlp supported link]: Leech yt-dlp supported link
+<br><br>
+• <b>/{BotCommands.LeechZipWatchCommand[0]}</b> [yt-dlp supported link]: Leech yt-dlp supported link as zip
 <br><br>
 • <b>/{BotCommands.CloneCommand[0]}</b> [drive_url][gdtot_url]: Copy file/folder to Google Drive
 <br><br>
 • <b>/{BotCommands.CountCommand}</b> [drive_url][gdtot_url]: Count file/folder of Google Drive
 <br><br>
 • <b>/{BotCommands.DeleteCommand}</b> [drive_url]: Delete file/folder from Google Drive (Only Owner & Sudo)
-<br><br>
-• <b>/{BotCommands.LeechWatchCommand[0]}</b> [yt-dlp supported link]: Leech yt-dlp supported link
-<br><br>
-• <b>/{BotCommands.LeechZipWatchCommand[0]}</b> [yt-dlp supported link]: Leech yt-dlp supported link as zip
 <br><br>
 • <b>/{BotCommands.PreNameCommand[0]}</b>: Set Prename to leech files
 <br><br>
@@ -340,12 +335,12 @@ def bot_help(update, context):
 
 if SET_BOT_COMMANDS:
     botcmds = [
-#        (f'{BotCommands.MirrorCommand[0]}', 'Mirror'),
-#        (f'{BotCommands.UnzipMirrorCommand[0]}','Mirror and extract files'),
-#        (f'{BotCommands.ZipMirrorCommand[0]}','Mirror and upload as zip'),
-#        (f'{BotCommands.QbMirrorCommand[0]}','Mirror torrent using qBittorrent'),
-#        (f'{BotCommands.QbUnzipMirrorCommand[0]}','Mirror torrent and extract files using qb'),
-#        (f'{BotCommands.QbZipMirrorCommand[0]}','Mirror torrent and upload as zip using qb'),
+        (f'{BotCommands.MirrorCommand[0]}', 'Mirror'),
+        (f'{BotCommands.UnzipMirrorCommand[0]}','Mirror and extract files'),
+        (f'{BotCommands.ZipMirrorCommand[0]}','Mirror and upload as zip'),
+        (f'{BotCommands.QbMirrorCommand[0]}','Mirror torrent using qBittorrent'),
+        (f'{BotCommands.QbUnzipMirrorCommand[0]}','Mirror torrent and extract files using qb'),
+        (f'{BotCommands.QbZipMirrorCommand[0]}','Mirror torrent and upload as zip using qb'),
         (f'{BotCommands.LeechCommand[0]}','Leech'),
         (f'{BotCommands.UnzipLeechCommand[0]}','Leech and extract files'),
         (f'{BotCommands.ZipLeechCommand[0]}','Leech and upload as zip'),
