@@ -193,8 +193,8 @@ def ping(update, context):
 def log(update, context):
     sendLogFile(context.bot, update.message)
 
-help_string = f'''
-<b><a href="https://telegram.me/{AUTHOR_NAME}">{AUTHOR_NAME}</a></b> - The Ultimate Telegram Mirror-Leech Bot to Upload Your File & Link in Google Drive & Telegram\
+help_string = '''
+<b><a href="https://telegram.me/Nanthakps">Nanthakps</a></b> - The Ultimate Telegram Mirror-Leech Bot to Upload Your File & Link in Google Drive & Telegram\
 \n\n<b>Choose A Help Category:</b>
 '''
 
