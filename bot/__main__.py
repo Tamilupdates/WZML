@@ -193,8 +193,8 @@ def ping(update, context):
 def log(update, context):
     sendLogFile(context.bot, update.message)
 
-help_string = '''
-<b><a href='https://telegram.me/Nanthakps'>Nanthakps</a></b> - The Ultimate Telegram Mirror-Leech Bot to Upload Your File & Link in Google Drive & Telegram\
+help_string = f'''
+<b><a href="https://telegram.me/{AUTHOR_NAME}">{AUTHOR_NAME}</a></b> - The Ultimate Telegram Mirror-Leech Bot to Upload Your File & Link in Google Drive & Telegram\
 \n\n<b>Choose A Help Category:</b>
 '''
 
@@ -431,13 +431,13 @@ def main():
                     with open(".restartmsg") as f:
                         chat_id, msg_id = map(int, f)
                     msg = f"😎Restarted successfully❗\n\n"
-                    msg += f"🧑‍💻Master: @Nanthakps 🔥\n"
+                    msg += f"🧑‍💻Master: @{AUTHOR_NAME} 🔥\n"
                     msg += f"📅DATE: {date}\n"
                     msg += f"⌚TIME: {time}\n"
                     msg += f"🌐TIMEZONE: {TIMEZONE}"
                 else:
                     msg = f"😎Bot Restarted!\n\n"
-                    msg += f"🧑‍💻Master: @Nanthakps 🔥\n"
+                    msg += f"🧑‍💻Master: @{AUTHOR_NAME} 🔥\n"
                     msg += f"📅DATE: {date}\n"
                     msg += f"⌚TIME: {time}\n"
                     msg += f"🌐TIMEZONE: {TIMEZONE}"
@@ -468,11 +468,11 @@ def main():
     if ospath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
-        msg = f"😎Restarted successfully❗\n\n🧑‍💻Master: @Nanthakps 🔥\n📅DATE: {date}\n⌚TIME: {time}\n🌐TIMEZONE: {TIMEZONE}"
+        msg = f"😎Restarted successfully❗\n\n🧑‍💻Master: @{AUTHOR_NAME} 🔥\n📅DATE: {date}\n⌚TIME: {time}\n🌐TIMEZONE: {TIMEZONE}"
         bot.edit_message_text(msg, chat_id, msg_id)
         osremove(".restartmsg")
     elif not notifier_dict and AUTHORIZED_CHATS:
-        text = f"😎Bot Restarted❗\n\n🧑‍💻Master: @Nanthakps 🔥\n📅DATE: {date} \n⌚TIME: {time} \n🌐TIMEZONE: {TIMEZONE}"
+        text = f"😎Bot Restarted❗\n\n🧑‍💻Master: @{AUTHOR_NAME} 🔥\n📅DATE: {date} \n⌚TIME: {time} \n🌐TIMEZONE: {TIMEZONE}"
         for id_ in AUTHORIZED_CHATS:
             try:
                 bot.sendMessage(chat_id=id_, text=text, parse_mode=ParseMode.HTML)
