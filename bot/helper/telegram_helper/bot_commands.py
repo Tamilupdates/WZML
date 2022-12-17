@@ -34,13 +34,13 @@ class _BotCommands:
         self.SearchCommand = getCommand('SEARCH_COMMAND', f'search{CMD_INDEX}')
         self.StatusCommand = getCommand('STATUS_COMMAND', f'status{CMD_INDEX}'), f'sts{CMD_INDEX}'
         self.StatsCommand = getCommand('STATS_COMMAND', f'stats{CMD_INDEX}')
-        self.AuthorizedUsersCommand = getCommand('USERS_COMMAND', f'kpsusers{CMD_INDEX}'), f'usr{CMD_INDEX}'
         self.PaidUsersCommand = getCommand('PAID_COMMAND', f'paid{CMD_INDEX}'), f'pd{CMD_INDEX}'
         self.AddPaidCommand = getCommand('ADDPAID_COMMAND', f'addpaid{CMD_INDEX}'), f'apd{CMD_INDEX}'
         self.RmPaidCommand = getCommand('RMPAID_COMMAND', f'rmpaid{CMD_INDEX}'), f'rpd{CMD_INDEX}'
         self.PreNameCommand = getCommand('PRENAME_COMMAND', f'prename{CMD_INDEX}'), f'pre{CMD_INDEX}'
         self.CaptionCommand = getCommand('CAPTION_COMMAND', f'caption{CMD_INDEX}'), f'cap{CMD_INDEX}'
         self.UserLogCommand = getCommand('DUMPID_COMMAND', f'dumpid{CMD_INDEX}'), f'dump{CMD_INDEX}'
+        self.AuthorizedUsersCommand = getCommand('USERS_COMMAND', f'kpsusers{CMD_INDEX}'), f'usr{CMD_INDEX}'
         self.AuthorizeCommand = getCommand('AUTH_COMMAND', f'kpsauthorize{CMD_INDEX}'), f'au{CMD_INDEX}'
         self.UnAuthorizeCommand = getCommand('UNAUTH_COMMAND', f'kpsunauthorize{CMD_INDEX}'), f'ua{CMD_INDEX}'
         self.AddSudoCommand = getCommand('ADDSUDO_COMMAND', f'addsudo{CMD_INDEX}'), f'asd{CMD_INDEX}'
