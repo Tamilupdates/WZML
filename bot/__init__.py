@@ -127,7 +127,7 @@ LOG_LEECH = set()
 
 try:
     BOT_TOKEN = getConfig('BOT_TOKEN')
-    parent_id = getConfig('GDRIVE_FOLDER_ID')
+    parent_id = getConfig('GDRIVE_ID')
     DOWNLOAD_DIR = getConfig('DOWNLOAD_DIR')
     if not DOWNLOAD_DIR.endswith("/"):
         DOWNLOAD_DIR = DOWNLOAD_DIR + '/'
@@ -593,11 +593,11 @@ try:
 except:
     TIMEZONE = "Asia/Kolkata"
 try:
-    CRYPT = getConfig('CRYPT')
-    if len(CRYPT) == 0:
+    GDTOT_CRYPT = getConfig('GDTOT_CRYPT')
+    if len(GDTOT_CRYPT) == 0:
         raise KeyError
 except:
-    CRYPT = None
+    GDTOT_CRYPT = None
 try:
     UNIFIED_EMAIL = getConfig('UNIFIED_EMAIL')
     if len(UNIFIED_EMAIL) == 0:
