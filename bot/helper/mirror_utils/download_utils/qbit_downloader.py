@@ -190,7 +190,7 @@ class QbDownloader:
                         if limit is not None:
                             LOGGER.info('Checking File/Folder Size...')
                             if size > limit * 1024**3:
-                                fmsg = f"{mssg}.\n\n<b>Your File/Folder size is {get_readable_file_size(size)}</b>"
+                                fmsg = f"{mssg}.\n\nYour File/Folder size is {get_readable_file_size(size)}"
                                 self.__onDownloadError(fmsg)
                     self.__sizeChecked = True
             elif tor_info.state == "stalledDL":
